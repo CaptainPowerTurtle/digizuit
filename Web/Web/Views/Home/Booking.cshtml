@@ -1,0 +1,19 @@
+﻿@model BookingWeb.Models.File
+<h2>Create</h2>
+
+<form method="post" asp-controller="Upload" asp-action="Upload">
+    <label for="Name">Name</label>
+    <input type="text" name="Name" />
+
+    <label for="Email">Email</label>
+    <input type="text" name="Email" />
+
+    <label for="FileFormat">Video</label>
+    <input type="radio" name="FileFormat" value="Video" />
+    <label for="FileFormat">Picture</label>
+    <input type="radio" name="FileFormat" value="Picture" />
+    <label for="FileFormat">PDF</label>
+    <input type="radio" name="FileFormat" value="PDF" />
+
+    <input type="submit" placeholder="Send" />
+</form>
